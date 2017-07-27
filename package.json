@@ -1,0 +1,25 @@
+{
+  "name": "typescript-staffboard",
+  "version": "0.0.1",
+  "description": "Staff board project with typescript",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm run html && npm run css",
+    "start": "nodemon ./build/server.js",
+    "dev-ts": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "html": "XCOPY /S /y .\\app\\*.html .\\build\\",
+    "css": "XCOPY /S /y .\\app\\*.css .\\build\\"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.0.16",
+    "nodemon": "^1.11.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
